@@ -11,22 +11,10 @@ if (!body) {
     throw new Error("body element not found");
 }
 
-// function getDocumentSize() {
-//     const docEl = document.documentElement;
-//     return {
-//         width: docEl.clientWidth || window.innerWidth,
-//         height: docEl.clientHeight || window.innerHeight,
-//     };
-// }
-
-// const { width, height } = getDocumentSize();
-
-// const width = window.innerWidth;
-// const height = window.innerHeight;
 Game.init(body, {
     width: 1080,
     height: 1920,
-    backgroundColor: "#303030",
+    backgroundColor: "#eedec7",
 }).then(() => {
     // Pixi.JS UI Layer
     canvas.addLayer(CANVAS_UI_LAYER_NAME, new Container());

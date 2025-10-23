@@ -104,6 +104,106 @@ export const map_bearer = new CharacterBaseModel("map_bearer", {
     name: "Носій мапи",
 });
 
+export const boyar1 = new CharacterBaseModel("boyar1", {
+    name: "Боярин 1",
+});
+
+export const boyar2 = new CharacterBaseModel("boyar2", {
+    name: "Боярин 2",
+});
+
+export const merchant = new CharacterBaseModel("merchant", {
+    name: "Купець",
+});
+
+export const envoy = new CharacterBaseModel("envoy", {
+    name: "Посол",
+});
+
+export const roman = new CharacterBaseModel("roman", {
+    name: "Роман Мстиславич",
+});
+
+export const retainer = new CharacterBaseModel("retainer", {
+    name: "Дружинник (почет)",
+});
+
+export const bishop = new CharacterBaseModel("bishop", {
+    name: "Єпископ",
+});
+
+export const crowd = new CharacterBaseModel("crowd", {
+    name: "Натовп",
+});
+
+export const marketwoman = new CharacterBaseModel("marketwoman", {
+    name: "Купчиха",
+});
+
+export const danilo = new CharacterBaseModel("danilo", {
+    name: "Данило Романович",
+});
+
+export const lev = new CharacterBaseModel("lev", {
+    name: "Лев Данилович",
+});
+
+export const papal_messenger = new CharacterBaseModel("papal_messenger", {
+    name: "Посланець Папи",
+});
+
+export const boyar = new CharacterBaseModel("boyar", {
+    name: "Боярин",
+});
+
+export const legate_opizo = new CharacterBaseModel("legate_opizo", {
+    name: "Легат Опізо",
+});
+
+export const german_merchant = new CharacterBaseModel("german_merchant", {
+    name: "Німецький Купець",
+});
+
+export const master_builder = new CharacterBaseModel("master_builder", {
+    name: "Будівничий",
+});
+
+export const dmytro_dedko = new CharacterBaseModel("dmytro_dedko", {
+    name: "Дмитро Дедько",
+});
+
+export const casimir = new CharacterBaseModel("casimir", {
+    name: "Казимир III Великий",
+});
+
+export const advisor = new CharacterBaseModel("advisor", {
+    name: "Радник",
+});
+
+export const lubart = new CharacterBaseModel("lubart", {
+    name: "Любарт-Гедимінович",
+});
+
+export const voivode = new CharacterBaseModel("voivode", {
+    name: "Воєвода",
+});
+
+export const townswoman = new CharacterBaseModel("townswoman", {
+    name: "Міщанка",
+});
+
+export const artisan = new CharacterBaseModel("artisan", {
+    name: "Ремісник",
+});
+
+export const envoy_casimir = new CharacterBaseModel("envoy_casimir", {
+    name: "Посол Казимира",
+});
+
+export const envoy_grand_duke = new CharacterBaseModel("envoy_grand_duke", {
+    name: "Посол Великого князя",
+});
+
 // === Реєстрація всіх ===
 RegisteredCharacters.add([
     oleg,
@@ -129,4 +229,29 @@ RegisteredCharacters.add([
     chronicler,
     servant,
     map_bearer,
+    boyar1,
+    boyar2,
+    merchant,
+    envoy,
+    roman,
+    retainer,
+    bishop,
+    crowd,
+    marketwoman,
+    danilo,
+    lev,
+    papal_messenger,
+    boyar,
+    legate_opizo,
+    german_merchant,
+    master_builder,
+    dmytro_dedko,
+    casimir,
+    advisor,
+    lubart,
+    voivode,
+    townswoman,
+    artisan,
+    envoy_casimir,
+    envoy_grand_duke,
 ]);

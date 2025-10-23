@@ -1,40 +1,37 @@
 import { Stack } from "@mui/joy";
-import { useQueryClient } from "@tanstack/react-query";
-import { useSnackbar } from "notistack";
+//import { useQueryClient } from "@tanstack/react-query";
+//import { useSnackbar } from "notistack";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import TextMenuButton from "../components/TextMenuButton";
-import useNarrationFunctions from "../hooks/useNarrationFunctions";
-import { useQueryCanGoBack } from "../hooks/useQueryInterface";
-import useQueryLastSave, { LAST_SAVE_USE_QUEY_KEY } from "../hooks/useQueryLastSave";
-import { SAVES_USE_QUEY_KEY } from "../hooks/useQuerySaves";
+//import useQueryLastSave, { LAST_SAVE_USE_QUEY_KEY } from "../hooks/useQueryLastSave";
+//import { SAVES_USE_QUEY_KEY } from "../hooks/useQuerySaves";
 import useAutoInfoStore from "../stores/useAutoInfoStore";
-import useGameSaveScreenStore from "../stores/useGameSaveScreenStore";
-import useHistoryScreenStore from "../stores/useHistoryScreenStore";
+//import useGameSaveScreenStore from "../stores/useGameSaveScreenStore";
+//import useHistoryScreenStore from "../stores/useHistoryScreenStore";
 import useInterfaceStore from "../stores/useInterfaceStore";
-import useSettingsScreenStore from "../stores/useSettingsScreenStore";
+//import useSettingsScreenStore from "../stores/useSettingsScreenStore";
 import useSkipStore from "../stores/useSkipStore";
-import useStepStore from "../stores/useStepStore";
-import { saveGameToIndexDB } from "../utils/save-utility";
+//import { saveGameToIndexDB } from "../utils/save-utility";
 
 export default function QuickTools() {
-    const editOpenSettings = useSettingsScreenStore((state) => state.editOpen);
-    const editOpenHistory = useHistoryScreenStore((state) => state.editOpen);
-    const editOpenSaveScreen = useGameSaveScreenStore((state) => state.editOpen);
-    const setOpenLoadAlert = useGameSaveScreenStore((state) => state.editLoadAlert);
+    //const editOpenSettings = useSettingsScreenStore((state) => state.editOpen);
+    //const editOpenHistory = useHistoryScreenStore((state) => state.editOpen);
+    //const editOpenSaveScreen = useGameSaveScreenStore((state) => state.editOpen);
+    //const setOpenLoadAlert = useGameSaveScreenStore((state) => state.editLoadAlert);
     const { t } = useTranslation(["ui"]);
     const hidden = useInterfaceStore((state) => state.hidden);
     const skipEnabled = useSkipStore((state) => state.enabled);
     const editSkipEnabled = useSkipStore((state) => state.editEnabled);
-    const setSkipEnabled = useSkipStore((state) => state.setEnabled);
+    //const setSkipEnabled = useSkipStore((state) => state.setEnabled);
     const autoEnabled = useAutoInfoStore((state) => state.enabled);
     const editAutoEnabled = useAutoInfoStore((state) => state.editEnabled);
-    const { enqueueSnackbar } = useSnackbar();
-    const queryClient = useQueryClient();
-    const { data: lastSave = null } = useQueryLastSave();
-    const { data: canGoBack = null } = useQueryCanGoBack();
-    const nextStepLoading = useStepStore((state) => state.loading);
-    const { goBack } = useNarrationFunctions();
+    //const { enqueueSnackbar } = useSnackbar();
+    //const queryClient = useQueryClient();
+    //const { data: lastSave = null } = useQueryLastSave();
+    //const { data: canGoBack = null } = useQueryCanGoBack();
+    //const nextStepLoading = useStepStore((state) => state.loading);
+    //const { goBack } = useNarrationFunctions();
     const textMenuVarians = useMemo(
         () =>
             hidden
@@ -46,7 +43,7 @@ export default function QuickTools() {
     return (
         <Stack
             direction='row'
-            justifyContent='center'
+            justifyContent='start'
             alignItems='flex-end'
             spacing={{ xs: 0.5, sm: 1, md: 2 }}
             sx={{
@@ -59,7 +56,7 @@ export default function QuickTools() {
             }}
             className={textMenuVarians}
         >
-            <TextMenuButton
+            {/* <TextMenuButton
                 onClick={() => {
                     if (skipEnabled) {
                         setSkipEnabled(false);
@@ -70,10 +67,10 @@ export default function QuickTools() {
                 sx={{ pointerEvents: !hidden ? "auto" : "none" }}
             >
                 {t("back")}
-            </TextMenuButton>
+            </TextMenuButton> 
             <TextMenuButton onClick={editOpenHistory} sx={{ pointerEvents: !hidden ? "auto" : "none" }}>
                 {t("history")}
-            </TextMenuButton>
+            </TextMenuButton>*/}
             <TextMenuButton
                 selected={skipEnabled}
                 onClick={editSkipEnabled}
@@ -88,7 +85,7 @@ export default function QuickTools() {
             >
                 {t("auto_forward_time_restricted")}
             </TextMenuButton>
-            <TextMenuButton onClick={editOpenSaveScreen} sx={{ pointerEvents: !hidden ? "auto" : "none" }}>
+            {/* <TextMenuButton onClick={editOpenSaveScreen} sx={{ pointerEvents: !hidden ? "auto" : "none" }}>
                 {t(`${t("save")}/${t("load")}`)}
             </TextMenuButton>
             <TextMenuButton
@@ -116,7 +113,7 @@ export default function QuickTools() {
             </TextMenuButton>
             <TextMenuButton onClick={editOpenSettings} sx={{ pointerEvents: !hidden ? "auto" : "none" }}>
                 {t("settings_restricted")}
-            </TextMenuButton>
+            </TextMenuButton> */}
         </Stack>
     );
 }
