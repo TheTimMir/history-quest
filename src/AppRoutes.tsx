@@ -22,7 +22,6 @@ export default function AppRoutes() {
 }
 
 function NarrationElement() {
-    console.log("IN [Narration element]");
     return (
         <>
             <HistoryScreen />

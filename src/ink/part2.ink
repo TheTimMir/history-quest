@@ -1,10 +1,3 @@
-// Хрещення Русі Володимиром
-// Персонажі визначені в characters.ts: narrator, volodymyr, rabbi, imam, monk, kyivite, warrior, priest, child, scribe
-// Емоції: resoluteVolodymyr, thoughtfulVolodymyr, inspiredVolodymyr
-//         persuasiveMonk, calmRabbi, sternImam
-//         doubtfulKyivite, grievingKyivite, relievedKyivite
-//         solemnPriest, joyfulChild, steadfastWarrior, focusedScribe
-
 VAR score2 = 0
 VAR story2_completed = false
 
