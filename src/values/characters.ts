@@ -204,6 +204,110 @@ export const envoy_grand_duke = new CharacterBaseModel("envoy_grand_duke", {
     name: "Посол Великого князя",
 });
 
+export const khmelnytskyi = new CharacterBaseModel("khmelnytskyi", {
+    name: "Богдан Хмельницький",
+});
+
+export const senior_officer = new CharacterBaseModel("senior_officer", {
+    name: "Старшина",
+});
+
+export const tughay_bey = new CharacterBaseModel("tughay_bey", {
+    name: "Тугай-бей",
+});
+
+export const magnate1 = new CharacterBaseModel("magnate1", {
+    name: "Магнат 1",
+});
+
+export const magnate2 = new CharacterBaseModel("magnate2", {
+    name: "Магнат 2",
+});
+
+export const jesuit = new CharacterBaseModel("jesuit", {
+    name: "Єзуїт",
+});
+
+export const colonel = new CharacterBaseModel("colonel", {
+    name: "Полковник",
+});
+
+export const transylvanian_envoy = new CharacterBaseModel("transylvanian_envoy", {
+    name: "Посол трансильванський",
+});
+
+export const swedish_emissary = new CharacterBaseModel("swedish_emissary", {
+    name: "Шведський емісар",
+});
+
+export const catherine_ii = new CharacterBaseModel("catherine_ii", {
+    name: "Катерина II",
+});
+
+export const rozumovsky = new CharacterBaseModel("rozumovsky", {
+    name: "Кирило Розумовський",
+});
+
+export const potemkin = new CharacterBaseModel("potemkin", {
+    name: "Григорій Потьомкін",
+});
+
+export const kalnyshevsky = new CharacterBaseModel("kalnyshevsky", {
+    name: "Петро Калнишевський",
+});
+
+export const page = new CharacterBaseModel("page", {
+    name: "Джура",
+});
+
+export const tekeli = new CharacterBaseModel("tekeli", {
+    name: "Петро Текелі",
+});
+
+export const officer = new CharacterBaseModel("officer", {
+    name: "Офіцер",
+});
+
+export const grey_cossack = new CharacterBaseModel("grey_cossack", {
+    name: "Козак-сивочолий",
+});
+
+export const young_cossack = new CharacterBaseModel("young_cossack", {
+    name: "Молодший козак",
+});
+
+export const elder = new CharacterBaseModel("elder", {
+    name: "Старий",
+});
+
+export const envoy_buturlin = new CharacterBaseModel("envoy_buturlin", {
+    name: "Посол Бутурлін",
+});
+
+export const zarudny = new CharacterBaseModel("zarudny", {
+    name: "С. Богданович-Зарудний",
+});
+
+export const clerk_moscow = new CharacterBaseModel("clerk_moscow", {
+    name: "Московський дяк",
+});
+
+export const pavlo_teteria = new CharacterBaseModel("pavlo_teteria", {
+    name: "Павло Тетеря",
+});
+
+export const company_commander = new CharacterBaseModel("company_commander", {
+    name: "Сотник",
+});
+
+export const townsman = new CharacterBaseModel("townsman", {
+    name: "Міщанин",
+});
+
+export const kyiv_priest = new CharacterBaseModel("kyiv_priest", {
+    name: "Київський священник",
+});
+
 // === Реєстрація всіх ===
 RegisteredCharacters.add([
     oleg,
@@ -254,4 +358,30 @@ RegisteredCharacters.add([
     artisan,
     envoy_casimir,
     envoy_grand_duke,
+    khmelnytskyi,
+    senior_officer,
+    tughay_bey,
+    magnate1,
+    magnate2,
+    jesuit,
+    colonel,
+    transylvanian_envoy,
+    swedish_emissary,
+    catherine_ii,
+    rozumovsky,
+    potemkin,
+    kalnyshevsky,
+    page,
+    tekeli,
+    officer,
+    grey_cossack,
+    young_cossack,
+    elder,
+    envoy_buturlin,
+    zarudny,
+    clerk_moscow,
+    pavlo_teteria,
+    company_commander,
+    townsman,
+    kyiv_priest,
 ]);

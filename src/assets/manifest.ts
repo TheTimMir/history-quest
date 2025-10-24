@@ -1,6 +1,11 @@
 import { AssetsManifest } from "@drincs/pixi-vn";
 
 // Імпортуємо зображення фонів
+import bgCossackChyhyryn1648 from "../assets/backgrounds/cossackChyhyryn1648.png";
+import bgCossackDiplomaticDesk from "../assets/backgrounds/cossackDiplomaticDesk.png";
+import bgCossackPereiaslavZboriv from "../assets/backgrounds/cossackPereiaslavZboriv.png";
+import bgCossackPolishCampCouncil from "../assets/backgrounds/cossackPolishCampCouncil.png";
+import bgCossackTatarCamp from "../assets/backgrounds/cossackTatarCamp.png";
 import bgDniproBoat from "../assets/backgrounds/dnipro_boat.png";
 import bgDniproBaptism from "../assets/backgrounds/dniproBaptism.png";
 import bgHalych1340_CasimirCouncil from "../assets/backgrounds/halych1340_CasimirCouncil.png";
@@ -102,6 +107,11 @@ const manifest: AssetsManifest = {
                 { alias: "halych1340_LubartClaim", src: bgHalych1340_LubartClaim },
                 { alias: "halych1340_LvivMagdeburg", src: bgHalych1340_LvivMagdeburg },
                 { alias: "halych1340_PartitionBorder", src: bgHalych1340_PartitionBorder },
+                { alias: "cossackChyhyryn1648", src: bgCossackChyhyryn1648 },
+                { alias: "cossackTatarCamp", src: bgCossackTatarCamp },
+                { alias: "cossackPolishCampCouncil", src: bgCossackPolishCampCouncil },
+                { alias: "cossackPereiaslavZboriv", src: bgCossackPereiaslavZboriv },
+                { alias: "cossackDiplomaticDesk", src: bgCossackDiplomaticDesk },
             ],
         },
     ],

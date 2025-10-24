@@ -61,6 +61,6 @@ export default defineConfig({
     },
     server: {
         host: "0.0.0.0",
-        allowedHosts: ["thetimpc-1.ancon-boa.ts.net", "127.0.0.1"],
+        allowedHosts: true,
     },
 });

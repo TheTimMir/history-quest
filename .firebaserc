@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "default": "historyquest-f3eea"
+  },
+  "targets": {
+    "historyquest-f3eea": {
+      "hosting": {
+        "kr": [
+          "history-quest-kr"
+        ],
+        "gvk": [
+          "history-quest-gvk"
+        ],
+        "kd": [
+          "history-quest-kd"
+        ]
+      }
+    }
+  }
+}

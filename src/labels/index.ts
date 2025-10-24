@@ -1,4 +1,4 @@
 import "./animations-labels";
-import "./navigate_to_site";
-import "./save-score";
+import "./go-to-test";
+import "./save";
 export * from "./ui-lables";

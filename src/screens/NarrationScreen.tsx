@@ -6,6 +6,7 @@ import CardContent from "@mui/joy/CardContent";
 import Sheet from "@mui/joy/Sheet";
 import Typography from "@mui/joy/Typography";
 import { RefObject, useCallback, useMemo, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import Markdown from "react-markdown";
 import { MarkdownTypewriterHooks } from "react-markdown-typewriter";
 import rehypeRaw from "rehype-raw";
@@ -29,6 +30,7 @@ export default function NarrationScreen() {
     const { data: { animatedText, character, text } = {} } = useQueryDialogue();
     const hidden = useInterfaceStore((state) => state.hidden || (animatedText || text ? false : true));
     const cardHeight = animatedText || text ? cardHeightTemp : 0;
+    const { t } = useTranslation(["narration"]);
     const cardVarians = useMemo(
         () =>
             hidden
@@ -155,7 +157,7 @@ export default function NarrationScreen() {
                                         : `motion-opacity-out-0`
                                 }
                             >
-                                {`${character?.name || ""} ${character?.surname || ""}`}
+                                {`${t(character?.name || "")} ${t(character?.surname || "")}`}
                             </Typography>
                             <Sheet
                                 ref={paragraphRef}
